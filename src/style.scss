@@ -1,5 +1,5 @@
 $fontcolor:  rgb(10%, 10%, 10%);
-$backgroundcolor: rgb(98%, 98%, 98%);
+$backgroundcolor: #75B9BE;
 
 
 body {
@@ -20,9 +20,22 @@ body {
 }
 
 #video-detail {
+  border-style: inset;
+  border-width: 4.5px;
   width: 100%;
+  margin-right: 20px;
+  background-color: #E2EFDE;
 }
 
+#video-list {
+  background-color: #E2EFDE;
+  border-style: inset;
+  border-width: 4.5px;
+
+}
+#video-title {
+  margin-left: 10px;
+}
 #video-section {
   display: flex;
 
@@ -30,11 +43,21 @@ body {
     list-style: none;
     cursor: pointer;
     display: flex;
+    justify-content: stretch;
     width: 25vw;
+    // width: 100%;
     padding: 10px;
   }
   li:hover {
-    background: darken( $backgroundcolor, 10% );
+    background: darken( #E2EFDE, 10% );
+    // background: rgba(0,0,0,0);
+    // color: #3a7999;
+    // box-shadow: inset 0 0 0 3px #3a7999;
+    // transform: skew(-10deg);
+    border: 3px dotted $backgroundcolor;
+    color: $backgroundcolor;
+    // background: rgba(0,0,0,0);
+
   }
 
 }
